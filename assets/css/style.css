@@ -130,7 +130,7 @@ a {
 
 /* ========== Hero ========== */
 .hero {
-  padding: 60px 0;
+  padding: 60px 0 165px;
 }
 
 .hero__row {
@@ -258,4 +258,37 @@ a {
 
 .hero__img:nth-of-type(2) {
   transform: translateY(77px);
+}
+
+/* ========== Client ========== */
+.client {
+  margin-top: 42px;
+}
+
+.client__body {
+  height: 201px;
+  border-radius: 100px;
+  padding: 0 122px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e2eddf;
+}
+
+.client__logo {
+  cursor: pointer;
+}
+
+.client__discord {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.client__discord-text {
+  color: #163c35;
+  font-family: Poppins;
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: normal;
 }
