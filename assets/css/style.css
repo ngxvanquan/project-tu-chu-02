@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    scroll-behavior: smooth;
+}
+
+/* ========== Common ========== */
+.container {
+    max-width: calc(100% - 48px);
+    width: 1140px;
+    margin: 0 auto;
+}
