@@ -663,6 +663,11 @@ a {
 
 .process-item {
     border-bottom: 1px solid #83a17d;
+    transition: 0.25s;
+}
+
+.process-item:hover {
+    border-bottom-color: transparent;
 }
 
 .process-item__content {
@@ -671,11 +676,10 @@ a {
     height: 155px;
     padding: 57px 30px 54px;
     border-radius: 33px;
-    transition: 0.25s;
+    transition: 0.4;
 }
 
 .process-item__content:hover {
-    border-bottom-color: transparent;
     background: #e2eddf;
 }
 
@@ -717,4 +721,103 @@ a {
 .process-item__desc {
     width: 572px;
     margin-left: auto;
+}
+
+/* ========== Video ========== */
+.video {
+    padding: 116px 130px 63px;
+    background: #143c3c;
+}
+
+.video__heading {
+    position: relative;
+    width: 457px;
+    color: #e7f9f9;
+
+    font-family: Poppins;
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.23; /* 123.81% */
+}
+
+.video__heading::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 66px;
+    height: 2px;
+    background: #83a17d;
+    right: 97px;
+    bottom: 20px;
+}
+
+.video__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video__column {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    gap: 13px;
+}
+
+.video__desc {
+    color: #6a8383;
+
+    font-family: Public Sans;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.55;
+}
+
+.video__action {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    transition: 0.25;
+}
+
+.video__action:hover {
+    opacity: 0.7;
+}
+
+.video__action-text {
+    color: #fff;
+
+    font-family: Public Sans;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.55;
+}
+
+.video__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video__controls {
+    margin-top: 72px;
+    width: 100%;
+    border-radius: 22px;
+}
+
+.video__controls-btn {
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    background: black;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: 0.25s;
+}
+
+.video__controls-btn:hover {
+    opacity: 1;
+    background: #80a07b;
 }
